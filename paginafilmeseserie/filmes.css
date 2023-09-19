@@ -1,0 +1,173 @@
+:root{
+    --vermelho: #D8000C; /* Vermelho característico de Star Wars */
+    --preto: #ecb622; /* Preto característico de Star Wars */
+} 
+
+
+
+
+.background-image {
+    position: fixed; 
+    top: 0;  
+    left: 0;  
+    width: 100%;
+        height: 100%;
+        background-image: url('../img/ceu.jpg'); 
+        background-size: cover;
+        background-position: center;
+        z-index: -1; 
+    }
+    
+
+/* formatação do cabeçalho */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* formatação do logo */
+header .logo{
+    position: relative;
+    max-width: 80px;
+}
+/* formatar a lista não ordenada */
+header ul{
+    position: relative;
+    display: flex;
+}
+/* formatar o estilo tirando os ticks usando none */
+header ul li{
+    list-style: none;
+
+}
+/* formatação da lista do menu */
+header ul li a{
+    display: inline-block;
+    color: #e9c319;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos base */
+body {
+    background: var(--preto);
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/* Filme principal */
+.filme-principal{
+    background: url('../img/98b846d53c375460cf474a80bd77dcb6.jpg');
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    max-width: 60%;
+    font-size: 18px;
+}
+
+.titulo{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.botao{
+    background-color: var(--preto);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.botao:hover{
+    background-color: var(--vermelho);
+    color: white;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width:700px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+.botao{
+    margin-top: 5px;
+    width: 300px;
+
+}
+
+}
+
+@media screen and (min-width:1000px){
+    .descricao{
+        width: 50%;
+
+    }
+    
+}
+    

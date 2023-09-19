@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+
+
+
+.background-image {
+
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+    height: 100%;
+    background-image: url('../img/ceu.jpg'); 
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.banner button {
+    font-family: var(--font-action);
+    color: rgb(246, 246, 252);
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    background: #9cdde9;  
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: moveBanner 1s 0.9s forwards;
+    
+}
+
+
+
+/* Formatação da section Menu ul/li */
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+/* formatação do cabeçalho */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* formatação do logo */
+header .logo{
+    position: relative;
+    max-width: 80px;
+}
+/* formatar a lista não ordenada */
+header ul{
+    position: relative;
+    display: flex;
+}
+/* formatar o estilo tirando os ticks usando none */
+header ul li{
+    list-style: none;
+
+}
+/* formatação da lista do menu */
+header ul li a{
+    display: inline-block;
+    color: #f1d740;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+}
+.content .textBox h2{
+    color:#f1d740;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content .textBox h2 span{
+    color: #b5180f;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.content .textBox p{
+    color: #f1d740;
+    text-shadow: 30px 50px 140px rgba(233, 73, 73, 0.384);
+}
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #b5180f;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.imgBox{
+    position: relative;
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.content .imgBox img{
+    max-width: 340px;
+}
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-70%);
+    display: flex;
+    transition: 0.5s;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+.thumb li img{
+    max-width: 60px;
+}
+.sci{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translatey(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+.sci li{
+    list-style: none;
+    
+}
+.sci li a{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+    
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #b5180f;
+    clip-path: circle(500px at right 800px);
+}
+.footer{
+    text-align: center;
+    font-size: 25px;
+}

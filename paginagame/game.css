@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+
+
+
+
+.background-image {
+position: fixed; 
+top: 0;  
+left: 0;  
+width: 100%;
+    height: 100%;
+    background-image: url('../img/ceu.jpg'); 
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* formatação do cabeçalho */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* formatação do logo */
+header .logo{
+    position: relative;
+    max-width: 80px;
+}
+/* formatar a lista não ordenada */
+header ul{
+    position: relative;
+    display: flex;
+}
+/* formatar o estilo tirando os ticks usando none */
+header ul li{
+    list-style: none;
+
+}
+/* formatação da lista do menu */
+header ul li a{
+    display: inline-block;
+    color: #fad60a;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+
+/* Additional Styles for Cards */
+.main-content {
+    padding: 40px 0;
+}
+
+.big-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.big-image {
+    text-align: center; /* This is where the alteration was made */
+}
+
+.big-image h1 {
+    font-size: 36px;
+    margin-top: 20px;
+    color: #333333;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 0 0 calc(33.33% - 40px); /* Adjusted flex calculation */
+    margin: 15px; /* Equal spacing around all four borders */
+}
+h1{
+    font-size: 30px;
+    color: #e2d028;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h2 {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #333333;
+}
+
+.card p {
+    margin-top: 10px;
+    color: #666666;
+}
+
+.film-series {
+    margin-top: 40px;
+}
+
+.film-series h2 {
+    font-size: 30px;
+    color: #eed443;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.film-series .card h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+.footer {
+text-align: center;
+font-size: 25px;}
+
+
+.sw-button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: inline-block;
+    overflow: hidden;
+    width: 50px; 
+    height: 50px; 
+}
+
+.sw-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.sw-button:hover {
+    transform: scale(1.1);
+}
